@@ -16,7 +16,7 @@ function generateNumber () {
         const randomNumber = Math.floor(Math.random(1) * 6);
 
         if (randomNumber === 0) {
-            randomNumber++
+            randomNumber += 1
         }
 
         target.style.fontSize = "18px";
