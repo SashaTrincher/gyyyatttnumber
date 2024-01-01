@@ -13,11 +13,7 @@ function generateNumber () {
 
         console.log(isPlaying);
 
-        const randomNumber = Math.floor(Math.random(1) * 6);
-
-        if (randomNumber === 0) {
-            randomNumber += 1
-        }
+        const randomNumber = Math.floor(Math.random(1) * 6) + 1;
 
         target.style.fontSize = "18px";
         target.innerHTML = '';
