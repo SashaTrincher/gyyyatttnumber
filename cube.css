@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cube {
+    width: 120px;
+    height: 120px;
+    background-color: gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number {
+    font-size: 18px;
+}
+.cube.animation {
+    animation: rotate 1.3s forwards;
+}
+.number {
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0);
+    }
+    25% {
+        transform: rotate3d(19, 20, 3, 45deg);
+    }
+    50% {
+        transform: rotate3d(2, -1, -1, -0.2turn);
+    }
+    75% {
+        transform: rotate3d(0, 1, 0.5, -100deg);
+    }
+    100% {
+        transform: rotate3d(0);
+    }
+}
